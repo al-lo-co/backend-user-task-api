@@ -43,7 +43,17 @@ group :development, :test do
 
   gem "rspec-rails", "~> 8.0"
 
+  gem "pry", "~> 0.15.2"
+end
+
+group :test do
   gem "factory_bot_rails", "~> 6.5"
 
   gem "faker", "~> 3.5"
 end
+
+gem "bcrypt", "~> 3.1"
+
+gem "jwt", "~> 2.10"
+
+gem "active_model_serializers", "~> 0.10.15"
