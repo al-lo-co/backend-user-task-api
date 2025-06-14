@@ -8,6 +8,8 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    networks:
+      - backend
   web:
     build: ./
     command: ./bin/entrypoint.sh
@@ -21,6 +23,12 @@ services:
       - db
     environment:
       - RAILS_ENV=development
+    networks:
+      - backend
 
 volumes:
   postgres-data:
+
+networks:
+  backend:
+    driver: bridge
