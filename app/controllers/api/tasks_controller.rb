@@ -3,7 +3,7 @@ module Api
     before_action :set_task, only: [ :update, :show, :destroy ]
 
     def index
-      render json: Task.all, status: :ok
+      render json: Task.all.page(params[:page] || 1).per(params[:per_page] || 10), status: :ok
     end
 
     def show

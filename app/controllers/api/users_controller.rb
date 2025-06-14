@@ -3,7 +3,7 @@ module Api
     before_action :set_user, only: [ :update, :show, :destroy ]
 
     def index
-      render json: User.all, status: :ok
+      render json: User.all.page(params[:page] || 1).per(params[:per_page] || 10), status: :ok
     end
 
     def show
