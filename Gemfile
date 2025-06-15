@@ -59,3 +59,5 @@ gem "jwt", "~> 2.10"
 gem "active_model_serializers", "~> 0.10.15"
 
 gem "kaminari", "~> 1.2"
+
+gem "graphql", "~> 2.5"
