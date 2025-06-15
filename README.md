@@ -1,6 +1,6 @@
 # User Tasks API
 
-This is a RESTful API with basic token authentication built with Ruby on Rails that allows you to manage users and their related tasks. The project also supports GraphQL queries and mutations for advanced interaction.
+This is a RESTful API with basic token authentication built with Ruby on Rails that allows you to manage users and their related tasks. The project also supports GraphQL queries and mutations.
 
 ## Features
 
@@ -10,10 +10,10 @@ This is a RESTful API with basic token authentication built with Ruby on Rails t
 - GraphQL support (queries and mutations for users and tasks)  
 - JSON serialization with **ActiveModel::Serializers**  
 - Unit and request tests with **RSpec**  
-- Dockerized with `Dockerfile` and `docker-compose`  
+- Dockerized with `Dockerfile` and `docker compose`  
 - PostgreSQL as the database, configured with persistent volume and isolated network
 - Jenkins for CI/CD
-- Uses dotenv for Enviorment variables
+- Uses dotenv for environment variables
 
 ## Variables
 
@@ -44,7 +44,7 @@ http://localhost:3000
 Tests are written using **RSpec**, covering:
 
 - Models  
-- Request endpoints  
+- Requests endpoints  
 
 To run tests inside the container:
 
@@ -60,7 +60,7 @@ docker compose run web bundle exec rspec
 	•	RSpec
 	•	GraphQL
 	•	Docker
-  •	Jenkins
+	•	Jenkins
 
 ## TODO
   •	Graphql unit tests
